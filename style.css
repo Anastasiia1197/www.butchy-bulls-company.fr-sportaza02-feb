@@ -27,15 +27,15 @@
 }
 
 :root {
-	--background: #0c0424; /* Темний графіт */
-	--header: linear-gradient(-135deg, #000000, #133528, #91f9e8); /* Від чорного до вогняного */
-	--btn: #0ec043; /* Неоновий червоний */
-	--promo: rgba(9, 73, 54, 0.1);
-	--table: rgba(52, 29, 69, 0.95);
-	--white: #fef2f2;
-	--black: #0a0a0a;
+	--background: #0f0a1e;
+	--header: linear-gradient(-135deg, #000000e5, #4d1d95da, #f43f5dd3);
+	--btn: #fb923c;
+	--promo: rgba(244, 63, 94, 0.1);
+	--table: rgba(30, 10, 60, 0.95);
+	--white: #fff7ed;
+	--black: #0c0a09;
 	--title: #ffffff;
-	--btn-accent: linear-gradient(135deg, #f171f8, #dc2626);
+	--btn-accent: linear-gradient(135deg, #f43f5e, #fb923c);
 }
 
 * {
@@ -124,9 +124,8 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	background: var(--header);
-	backdrop-filter: blur(2px);
+	backdrop-filter: blur(8px);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.6);
-	border-radius: 0 0 20px 20px;
 	max-width: 100vw;
 	margin: 0 auto;
 	margin-bottom: 20px;
@@ -150,7 +149,7 @@ header img {
 	padding: 10px 20px;
 	font-size: 1.2rem;
 	border: 1px solid var(--white);
-	border-radius: 0 10px;
+	box-shadow: 4px 4px 3px var(--btn);
 	color: var(--white);
 	margin-right: 50px;
 }
@@ -160,8 +159,8 @@ header img {
 	font-size: 1.2rem;
 	background-color: var(--btn);
 	color: var(--title);
+	box-shadow: 4px 4px 3px var(--title);
 	border: 2px solid rgba(255, 255, 255, 0.8);
-	border-radius: 10px 0;
 	text-align: center;
 }
 
